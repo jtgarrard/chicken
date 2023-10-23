@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World!</title>
+    <!-- linking to PyScript assets -->
+    <link rel="stylesheet" href="pyscript.css" />
+    <script defer src="pyscript.js"></script>
+  </head>
+  <body bgcolor="black">
+<br>
+<h1 align="center" style="color: white;">
+Chicken Joke Generator</h1>
+
+
+<div align="center">
+
+  <!-- Put Python code inside the the <py-script> tag -->
+    <py-script>
+
+import random
+
+def main():
+    print("Why did ", subject, " ", vprime, " ", dirob,"?",sep="")
+    
+    print("To", " ", vf1, " ", ob1,"!",sep="")
+    
+
+noun = tuple(["Bob","Randy","the President of the United States",
+"some ectoplasm","Whinnie the Pooh","your mom","Jake from State Farm","the endoplasmic reticulum",
+"some guy named Jeffrey","Ghengis Khan","the chicken","the egg","a rock",'Dwayne "The Rock" Johnson',
+"the Earth","the milk jug","Marie Curie","Joan of Arc","Superman","the okapi","the zebra","the platypus",
+"un gatito pequeñito","an adorable little kitten","the director of the CIA","Gordan Ramsay","George Washington",
+"Evil Knieval","Janet from Human Resources","the lawyer","the doctor","the milkman","the highwayman","the turtle","the tortoise",
+"the hare","the kangaroo","the rabid opossum","the sad boi","the hamburger","the cheeseburger","the taco","your left shoe",
+"your right shoe","the sock that disappeared from your laundry","some rando","Casper the friendly ghost","Mickey Mouse",
+'Elsa from "Frozen"',"Napolean Dynamite","seven","Charlegamagne","Caesar","Grant","Mario","Goku","Elvis",
+"Ron Weasley","Snow White","all seven dwarves","an enormous pile of traffic cones","somebody","the witches from 'Macbeth'",
+"a third elephant","the Dhali Llama","an Oldsmobile","Harrison Ford","Darth Vader","King Arthur","Ananzi the Spider",
+"Mulan","the pied piper","a groundhog","Robin Hood","the owner and manager of a small but relatively successful local botique",
+"my tenth cousin seven times removed","the sad horse","the Lone Ranger","everybody"
+"the road","the state of Nebraska","the planet Mars","the book 'Ender's Game'","every McDonald's on the planet",
+"Red Robins (yum)",
+])
+
+verb = tuple(["kiss","marry","kill","cross","divide","understand","reevalute their opinion of","love to annoy","write a book about",
+"draw a crayon portrait of","write a thesis on","devour","wage war against","hide from","remember","forget to put away","expectorate",
+"melt","microwave","paint","blend up","domesticate","carry around","redecorate","duel","interview","annoy","traverse",
+"fall in love with","vow revenge against","kick","wrestle","disown","hire","crush","emotionally destroy","initiate a rap battle against",
+"slurp up","cite an academic paper written by","scare","decrease the gravitational pull of","adopt","energize","empathize with",
+"study the behavior of","imitate","steal the identify of","overestimate","graduate the same year as","slip unnoticed past",
+"protect the VIPs from","suddenly leap over","get off the bus with","crash a satellite into","shine a laser pointer at",
+"name a dog after","learn to surf from","play video games with","declare war against","file a lawsuit against","serve potatoes to",
+"fill a wok with","watch a television program about","go to a preschool taught by","question the motives of","solve a mystery involving",
+"write a book called The Lion, The Witch, and","read the journal of","uncover the ancient tomb of","rob from the rich and give to","dig a hole beneath",
+"rob the bank used by","co-author a book with","better smell","become eternally indebted to","sign a sports contract with",
+"figure out that Gollum is really","understand why Dumbledore didn't trust","spread a conspiracy theory about","make jam made of",
+"repossess the family farm of","sculpt a cheese statue of","name a mouse after","tie the shoes together of","visit a museum dedicated to",
+"honor the famous astronaut,","sneak around unnoticed by","sneak food from the fridge of","rob the mansion of","become the mascot of",
+"join a protest against the tyranny of"
+])
+
+subject = str(random.choice(noun))
+
+vprime = str(random.choice(verb))
+
+dirob = str(random.choice(noun))
+
+ob1 = str(random.choice(noun))
+
+vf1 = str(random.choice(verb))
+
+main()
+
+</py-script>
+
+<a href="index.html">
+<button>
+Refresh
+</button>
+</a>
+</div>
+  </body>
+</html>
